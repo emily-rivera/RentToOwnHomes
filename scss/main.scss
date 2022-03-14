@@ -1,0 +1,55 @@
+@import "functions";
+@import "variables";
+
+$font-family-serif: "Playfair Display", serif;
+$font-family-sans-serif: "Montserrat", sans-serif;
+$enable-responsive-font-sizes: true;
+
+$theme-colors: (
+  "green": #a3c9a8,
+  "med-green": hsl(153, 25%, 61%),
+  "dark-green": #6b9080,
+  "blue": #7ebc89,
+  "light-tan": #ddd8c4,
+  "white": #f4f3ee,
+  "cream": #f6f0ed
+);
+
+@import "bootstrap";
+
+body {
+  background: #f6f0ed;
+  font-family: $font-family-serif;
+}
+
+.hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.815)), url('../images/hero-image.jpg') center/cover no-repeat;
+  height: 90vh;
+}
+
+.heroSubHead {
+  font-family: $font-family-sans-serif;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+
+.whyRentP,
+.worksP,
+.propertiesP,
+.faqP,
+.testP,
+.footP {
+  font-family: $font-family-sans-serif;
+}
+
+.testimony-1,
+.testimony-2,
+.testimony-3,
+.testimony-4 {
+  width: 75%;
+  border-radius: 50%;
+}
+
+a.faq:hover {
+  font-weight: bold;
+}
